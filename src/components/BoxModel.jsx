@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/box.css'
+// import '../styles/box.css'
 
 const BoxModel = () => {
     return (
