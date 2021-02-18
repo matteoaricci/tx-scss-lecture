@@ -1,0 +1,77 @@
+@-webkit-keyframes color-change {
+  0% {
+    background-color: pink;
+  }
+  50% {
+    background-color: grey;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: pink;
+  }
+  50% {
+    background-color: grey;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+.container .letter-spacing {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .letter-spacing:hover {
+  letter-spacing: 0.5rem;
+}
+
+.container .opacity {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .opacity:hover {
+  opacity: 0;
+}
+
+.container .color-change {
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.container .click-hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .click-hover:hover:active {
+  font-size: 1rem;
+}
+
+.container .click-hover:hover {
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=animation.css.map */
